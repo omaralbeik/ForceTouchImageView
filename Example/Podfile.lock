@@ -1,0 +1,12 @@
+PODS:
+  - ForceTouchImageView (0.1)
+
+DEPENDENCIES:
+  - ForceTouchImageView
+
+SPEC CHECKSUMS:
+  ForceTouchImageView: cfd431fabe39d559add1c91d2b0acb0b18366b3c
+
+PODFILE CHECKSUM: 7db90458478b1c93d72ffcb060960855370b0a20
+
+COCOAPODS: 1.2.0

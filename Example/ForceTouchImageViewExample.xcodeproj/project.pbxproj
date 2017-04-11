@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04796DABF7F6D9E88E6FCC04 /* Pods_ForceTouchImageViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797BDB1E1C3A3820246C0111 /* Pods_ForceTouchImageViewExample.framework */; };
 		07E4E0911E9AF29400BF71FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4E0901E9AF29400BF71FB /* AppDelegate.swift */; };
 		07E4E0931E9AF29400BF71FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4E0921E9AF29400BF71FB /* ViewController.swift */; };
 		07E4E0961E9AF29400BF71FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E4E0941E9AF29400BF71FB /* Main.storyboard */; };
 		07E4E0981E9AF29400BF71FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E4E0971E9AF29400BF71FB /* Assets.xcassets */; };
 		07E4E09B1E9AF29400BF71FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E4E0991E9AF29400BF71FB /* LaunchScreen.storyboard */; };
-		07E4E0A31E9AF2A600BF71FB /* ForceTouchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4E0A21E9AF2A600BF71FB /* ForceTouchImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,9 @@
 		07E4E0971E9AF29400BF71FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E4E09A1E9AF29400BF71FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E4E09C1E9AF29400BF71FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07E4E0A21E9AF2A600BF71FB /* ForceTouchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceTouchImageView.swift; sourceTree = "<group>"; };
+		4EE826B4BCBCB3DC73C7DD7E /* Pods-ForceTouchImageViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceTouchImageViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceTouchImageViewExample/Pods-ForceTouchImageViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		654ABDE04E6BA67A652605A3 /* Pods-ForceTouchImageViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceTouchImageViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForceTouchImageViewExample/Pods-ForceTouchImageViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+		797BDB1E1C3A3820246C0111 /* Pods_ForceTouchImageViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForceTouchImageViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04796DABF7F6D9E88E6FCC04 /* Pods_ForceTouchImageViewExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,8 @@
 			children = (
 				07E4E08F1E9AF29400BF71FB /* ForceTouchImageViewExample */,
 				07E4E08E1E9AF29400BF71FB /* Products */,
+				E1BACDB5C4001CCC0CD9568D /* Pods */,
+				F8CED92D6BBC41E94A66BD18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +61,6 @@
 		07E4E08F1E9AF29400BF71FB /* ForceTouchImageViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				07E4E0A21E9AF2A600BF71FB /* ForceTouchImageView.swift */,
 				07E4E0901E9AF29400BF71FB /* AppDelegate.swift */,
 				07E4E0921E9AF29400BF71FB /* ViewController.swift */,
 				07E4E0941E9AF29400BF71FB /* Main.storyboard */,
@@ -67,6 +71,23 @@
 			path = ForceTouchImageViewExample;
 			sourceTree = "<group>";
 		};
+		E1BACDB5C4001CCC0CD9568D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				654ABDE04E6BA67A652605A3 /* Pods-ForceTouchImageViewExample.debug.xcconfig */,
+				4EE826B4BCBCB3DC73C7DD7E /* Pods-ForceTouchImageViewExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8CED92D6BBC41E94A66BD18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				797BDB1E1C3A3820246C0111 /* Pods_ForceTouchImageViewExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07E4E09F1E9AF29400BF71FB /* Build configuration list for PBXNativeTarget "ForceTouchImageViewExample" */;
 			buildPhases = (
+				9385DC806D19A779B8C56556 /* [CP] Check Pods Manifest.lock */,
 				07E4E0891E9AF29400BF71FB /* Sources */,
 				07E4E08A1E9AF29400BF71FB /* Frameworks */,
 				07E4E08B1E9AF29400BF71FB /* Resources */,
+				8E2774A80661264FEC887B85 /* [CP] Embed Pods Frameworks */,
+				E4327B803A472B975E09B1CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E2774A80661264FEC887B85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForceTouchImageViewExample/Pods-ForceTouchImageViewExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9385DC806D19A779B8C56556 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4327B803A472B975E09B1CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForceTouchImageViewExample/Pods-ForceTouchImageViewExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07E4E0891E9AF29400BF71FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,7 +214,6 @@
 			files = (
 				07E4E0931E9AF29400BF71FB /* ViewController.swift in Sources */,
 				07E4E0911E9AF29400BF71FB /* AppDelegate.swift in Sources */,
-				07E4E0A31E9AF2A600BF71FB /* ForceTouchImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +336,7 @@
 		};
 		07E4E0A01E9AF29400BF71FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654ABDE04E6BA67A652605A3 /* Pods-ForceTouchImageViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C3VKVFB3SA;
@@ -278,6 +350,7 @@
 		};
 		07E4E0A11E9AF29400BF71FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE826B4BCBCB3DC73C7DD7E /* Pods-ForceTouchImageViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C3VKVFB3SA;
@@ -308,6 +381,7 @@
 				07E4E0A11E9AF29400BF71FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

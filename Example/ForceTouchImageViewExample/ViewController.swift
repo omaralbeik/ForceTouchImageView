@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ForceTouchImageView
 
 class ViewController: UIViewController {
 

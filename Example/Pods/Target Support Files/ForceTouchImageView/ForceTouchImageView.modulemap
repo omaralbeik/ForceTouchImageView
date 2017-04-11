@@ -1,0 +1,6 @@
+framework module ForceTouchImageView {
+  umbrella header "ForceTouchImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

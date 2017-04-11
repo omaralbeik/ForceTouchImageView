@@ -12,8 +12,8 @@ Why pinch to zoom when your have 3D Touch 🤔
 
 # Requirements:
 - **iOS** 9.0+
-- Xcode 8.0+
-- Swift 3.0+
+- **Xcode** 8.0+
+- **Swift** 3.0+
 
 
 # Installation

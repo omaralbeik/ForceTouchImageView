@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "07EEB53C1E9C968800E8536C"
+               BuildableName = "ForceTouchImageViewTests.xctest"
+               BlueprintName = "ForceTouchImageViewTests"
+               ReferencedContainer = "container:ForceTouchImageView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07A8C7631E9B1A880056B19A"
+            BuildableName = "ForceTouchImageView.framework"
+            BlueprintName = "ForceTouchImageView"
+            ReferencedContainer = "container:ForceTouchImageView.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

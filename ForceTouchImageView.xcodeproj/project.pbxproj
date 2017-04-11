@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07A8C7741E9B1B190056B19A /* ForceTouchImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A8C7711E9B1B190056B19A /* ForceTouchImageView.h */; };
+		07A8C7741E9B1B190056B19A /* ForceTouchImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A8C7711E9B1B190056B19A /* ForceTouchImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07A8C7751E9B1B190056B19A /* ForceTouchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8C7721E9B1B190056B19A /* ForceTouchImageView.swift */; };
-		07A8C7761E9B1B190056B19A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07A8C7731E9B1B190056B19A /* Info.plist */; };
+		07EEB5401E9C968800E8536C /* ForceTouchImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EEB53F1E9C968800E8536C /* ForceTouchImageViewTests.swift */; };
+		07EEB5421E9C968800E8536C /* ForceTouchImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A8C7641E9B1A880056B19A /* ForceTouchImageView.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07EEB5431E9C968800E8536C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A8C75B1E9B1A880056B19A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A8C7631E9B1A880056B19A;
+			remoteInfo = ForceTouchImageView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07A8C7641E9B1A880056B19A /* ForceTouchImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForceTouchImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A8C7711E9B1B190056B19A /* ForceTouchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForceTouchImageView.h; path = Source/ForceTouchImageView.h; sourceTree = SOURCE_ROOT; };
 		07A8C7721E9B1B190056B19A /* ForceTouchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForceTouchImageView.swift; path = Source/ForceTouchImageView.swift; sourceTree = SOURCE_ROOT; };
 		07A8C7731E9B1B190056B19A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		07EEB53D1E9C968800E8536C /* ForceTouchImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForceTouchImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EEB53F1E9C968800E8536C /* ForceTouchImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouchImageViewTests.swift; sourceTree = "<group>"; };
+		07EEB5411E9C968800E8536C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07EEB53A1E9C968800E8536C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EEB5421E9C968800E8536C /* ForceTouchImageView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -34,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				07A8C7661E9B1A880056B19A /* ForceTouchImageView */,
+				07EEB53E1E9C968800E8536C /* ForceTouchImageViewTests */,
 				07A8C7651E9B1A880056B19A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				07A8C7641E9B1A880056B19A /* ForceTouchImageView.framework */,
+				07EEB53D1E9C968800E8536C /* ForceTouchImageViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +78,15 @@
 				07A8C7731E9B1B190056B19A /* Info.plist */,
 			);
 			path = ForceTouchImageView;
+			sourceTree = "<group>";
+		};
+		07EEB53E1E9C968800E8536C /* ForceTouchImageViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				07EEB53F1E9C968800E8536C /* ForceTouchImageViewTests.swift */,
+				07EEB5411E9C968800E8536C /* Info.plist */,
+			);
+			path = ForceTouchImageViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,12 +121,31 @@
 			productReference = 07A8C7641E9B1A880056B19A /* ForceTouchImageView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		07EEB53C1E9C968800E8536C /* ForceTouchImageViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EEB5451E9C968800E8536C /* Build configuration list for PBXNativeTarget "ForceTouchImageViewTests" */;
+			buildPhases = (
+				07EEB5391E9C968800E8536C /* Sources */,
+				07EEB53A1E9C968800E8536C /* Frameworks */,
+				07EEB53B1E9C968800E8536C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07EEB5441E9C968800E8536C /* PBXTargetDependency */,
+			);
+			name = ForceTouchImageViewTests;
+			productName = ForceTouchImageViewTests;
+			productReference = 07EEB53D1E9C968800E8536C /* ForceTouchImageViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		07A8C75B1E9B1A880056B19A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Omar Albeik";
 				TargetAttributes = {
@@ -101,6 +153,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = C3VKVFB3SA;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					07EEB53C1E9C968800E8536C = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = C3VKVFB3SA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -118,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				07A8C7631E9B1A880056B19A /* ForceTouchImageView */,
+				07EEB53C1E9C968800E8536C /* ForceTouchImageViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +185,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A8C7761E9B1B190056B19A /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EEB53B1E9C968800E8536C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07EEB5391E9C968800E8536C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EEB5401E9C968800E8536C /* ForceTouchImageViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07EEB5441E9C968800E8536C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A8C7631E9B1A880056B19A /* ForceTouchImageView */;
+			targetProxy = 07EEB5431E9C968800E8536C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		07A8C76A1E9B1A880056B19A /* Debug */ = {
@@ -287,6 +367,32 @@
 			};
 			name = Release;
 		};
+		07EEB5461E9C968800E8536C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				INFOPLIST_FILE = ForceTouchImageViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omaralbeik.ForceTouchImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		07EEB5471E9C968800E8536C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C3VKVFB3SA;
+				INFOPLIST_FILE = ForceTouchImageViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omaralbeik.ForceTouchImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -307,6 +413,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		07EEB5451E9C968800E8536C /* Build configuration list for PBXNativeTarget "ForceTouchImageViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EEB5461E9C968800E8536C /* Debug */,
+				07EEB5471E9C968800E8536C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

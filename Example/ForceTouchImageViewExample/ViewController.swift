@@ -12,12 +12,23 @@ import ForceTouchImageView
 class ViewController: UIViewController {
 
 	@IBOutlet weak var imageView: ForceTouchImageView!
+	@IBOutlet weak var forceProgressView: UIProgressView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		imageView.forceTouchDelegate = self
 		imageView.layer.cornerRadius = 25
 		
 	}
 
+}
+
+
+extension ViewController: ForceTouchImageViewDelegate {
+	
+	func forceTouchImageView(_ view: ForceTouchImageView, touchForceDidChange force: CGFloat) {
+		forceProgressView.progress = Float(force/6.6)
+	}
+	
 }
 

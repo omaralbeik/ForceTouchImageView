@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xq-81-v9D" customClass="ForceTouchImageView" customModule="ForceTouchImageViewExample" customModuleProvider="target">
-                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xq-81-v9D" customClass="ForceTouchImageView" customModule="ForceTouchImageView">
+                                <rect key="frame" x="62" y="208.5" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8Xq-81-v9D" secondAttribute="height" multiplier="1:1" id="IeF-zW-0dt"/>
                                     <constraint firstAttribute="width" constant="250" id="ek2-9C-PbM"/>
@@ -33,18 +33,25 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="bird"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V53-wp-jtR">
+                                <rect key="frame" x="62" y="488.5" width="250" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8Xq-81-v9D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4q3-Zy-e9q"/>
+                            <constraint firstItem="V53-wp-jtR" firstAttribute="leading" secondItem="8Xq-81-v9D" secondAttribute="leading" id="5nB-CX-Xxa"/>
                             <constraint firstItem="8Xq-81-v9D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="6x9-4L-ybW"/>
-                            <constraint firstItem="8Xq-81-v9D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IsQ-tD-ZAz"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="8Xq-81-v9D" secondAttribute="trailing" constant="8" id="dpp-lh-FTK"/>
+                            <constraint firstItem="V53-wp-jtR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eSQ-nJ-pK5"/>
+                            <constraint firstItem="V53-wp-jtR" firstAttribute="trailing" secondItem="8Xq-81-v9D" secondAttribute="trailing" id="gr3-O6-1jL"/>
+                            <constraint firstItem="V53-wp-jtR" firstAttribute="top" secondItem="8Xq-81-v9D" secondAttribute="bottom" constant="30" id="rhw-Ir-lk3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8Xq-81-v9D" secondAttribute="bottom" constant="8" id="sfk-Sn-7xb"/>
                             <constraint firstItem="8Xq-81-v9D" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wQX-xI-RMb"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="forceProgressView" destination="V53-wp-jtR" id="WMW-qG-Ho0"/>
                         <outlet property="imageView" destination="8Xq-81-v9D" id="r9N-U2-Uzb"/>
                     </connections>
                 </viewController>

@@ -8,24 +8,37 @@
 
 import UIKit
 
+public protocol ForceTouchImageViewDelegate: class {
+	func forceTouchImageView(_ view: ForceTouchImageView, touchForceDidChange force: CGFloat)
+}
+
+extension ForceTouchImageViewDelegate {
+	func forceTouchImageView(_ view: ForceTouchImageView, touchForceDidChange force: CGFloat) {}
+}
+
 
 @IBDesignable
-class ForceTouchImageView: UIScrollView {
+public class ForceTouchImageView: UIScrollView {
+	
+	public weak var forceTouchDelegate: ForceTouchImageViewDelegate?
+	public var maximumPossibleForce: CGFloat = 0
+	
 	
 	fileprivate var imageView: UIImageView!
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		setupView()
+		
 	}
 	
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		setupView()
 	}
 	
 	@IBInspectable
-	var image: UIImage? {
+	public var image: UIImage? {
 		get {
 			return imageView.image
 		}
@@ -35,7 +48,7 @@ class ForceTouchImageView: UIScrollView {
 	}
 	
 	@IBInspectable
-	var highlightedImage: UIImage? {
+	public var highlightedImage: UIImage? {
 		get {
 			return imageView.highlightedImage
 		}
@@ -48,7 +61,7 @@ class ForceTouchImageView: UIScrollView {
 
 
 // MARK: - Touch methdos
-extension ForceTouchImageView {
+public extension ForceTouchImageView {
 	
 	override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 		
@@ -64,12 +77,15 @@ extension ForceTouchImageView {
 			return
 		}
 		
+		forceTouchDelegate?.forceTouchImageView(self, touchForceDidChange: touch.force)
+		
 		let scale = (touch.force*maximumZoomScale)/touch.maximumPossibleForce
 		setZoomScale(scale, animated: true)
 		
 	}
 	
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+		forceTouchDelegate?.forceTouchImageView(self, touchForceDidChange: 0)
 		setZoomScale(1.0, animated: true)
 	}
 	
@@ -79,7 +95,7 @@ extension ForceTouchImageView {
 // MARK: - UIScrollViewDelegate
 extension ForceTouchImageView: UIScrollViewDelegate {
 	
-	func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+	public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
 		return imageView
 	}
 	
@@ -89,7 +105,7 @@ extension ForceTouchImageView: UIScrollViewDelegate {
 // MARK: - Helpers
 extension ForceTouchImageView {
 	
-	fileprivate func setupView() {
+	func setupView() {
 		
 		clipsToBounds = true
 		bounces = false
@@ -121,7 +137,7 @@ extension ForceTouchImageView {
 		zoom(to: rect, animated: true)
 	}
 	
-	fileprivate func zoomRect(for scale: CGFloat, center: CGPoint) -> CGRect {
+	func zoomRect(for scale: CGFloat, center: CGPoint) -> CGRect {
 		var zoomRect = CGRect.zero
 		zoomRect.size.height = frame.size.height / scale
 		zoomRect.size.width  = frame.size.width  / scale
@@ -131,7 +147,7 @@ extension ForceTouchImageView {
 		return zoomRect
 	}
 	
-	fileprivate var midiumZoomScale: CGFloat {
+	var midiumZoomScale: CGFloat {
 		return (maximumZoomScale-minimumZoomScale)/2.0
 	}
 }

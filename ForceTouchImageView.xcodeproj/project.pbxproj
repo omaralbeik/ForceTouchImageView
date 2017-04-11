@@ -421,6 +421,7 @@
 				07EEB5471E9C968800E8536C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

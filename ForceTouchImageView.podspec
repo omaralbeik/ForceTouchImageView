@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name = "ForceTouchImageView"
   s.version = "0.1"
   s.summary = "Why pinch to zoom when you have 3D Touch 🤔"
-  s.description = ""
+  s.description = "An open source library to supoort 3D Touch for image zooming in UIScrollView"
   s.homepage = "https://github.com/omaralbeik/ForceTouchImageView"
   s.license = { type: 'MIT', file: 'LICENSE' }
   s.authors = { "Omar Albeik" => 'omaralbeik@gmail.com' }

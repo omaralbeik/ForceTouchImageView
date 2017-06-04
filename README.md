@@ -47,4 +47,4 @@ $ pod install
 
 ### Manually
 
-Add the [ForceTouchImageView](Source/ForceTouchImageView) file to your Xcode project.
+Add the [ForceTouchImageView](https://github.com/omaralbeik/ForceTouchImageView/blob/master/Source/ForceTouchImageView.swift) file to your Xcode project.
